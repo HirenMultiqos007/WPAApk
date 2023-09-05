@@ -40,7 +40,7 @@ const Users = () => {
               <th> Name </th>
               <th> Email </th>
               <th>Address</th>
-              {/* <th>Hiren</th> */}
+              <th>Hiren</th>
 
             </tr>
           </thead>
@@ -52,7 +52,7 @@ const Users = () => {
                   <td>{item?.name}</td>
                   <td>{item?.email}</td>
                   <td>{item?.address?.street}</td>
-                  {/* <td> Helloo </td> */}
+                  <td> Helloo </td>
                 </tr>
               );
             })}
