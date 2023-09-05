@@ -25,11 +25,11 @@ self.addEventListener("fetch", (event) => {
 let installPrompt = null;
 const installButton = document.querySelector("#install");
 
-window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  installPrompt = event;
-  installButton.removeAttribute("hidden");
-});
+// window.addEventListener("beforeinstallprompt", (event) => {
+//   event.preventDefault();
+//   installPrompt = event;
+//   installButton.removeAttribute("hidden");
+// });
 
 installButton.addEventListener("click", async () => {
   if (!installPrompt) {
