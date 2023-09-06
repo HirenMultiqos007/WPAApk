@@ -11,7 +11,7 @@ const Users = () => {
       .then((result) => {
         console.log(result, "result");
         setData(result);
-        localStorage.setItem("users", JSON.stringify(result));
+        // localStorage.setItem("users", JSON.stringify(result));
       })
       .catch((error) => {
         console.error("Fetch error:", error);
