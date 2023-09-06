@@ -3,7 +3,7 @@ let cacheData = "appV1";
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(cacheData).then((cache) => {
-      cache.addAll(["/static/js/bundle.js", "/index.html", "/", "/users"]);
+      cache.addAll(["/static/js/bundle.js", "/index.html", "/", "/users","/manifest.json","/static/js/main.961351a4.js"]);
     })
   );
 });
